@@ -6,7 +6,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
 	int timer = 0;
 	bool Flag = true;
-
+	[SerializeField]int  SelectLevel = 0;
 
 	private void Start()
 	{
@@ -25,7 +25,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 		if (Flag == true)
 		{
 			timer++;
-			if (timer % 60  == 0)
+			if (timer % (60 - SelectLevel)  == 0)
 			{
 				transform.Translate(0.1f, 0, 0); // ‰E‚ÉˆÚ“®
 			}
