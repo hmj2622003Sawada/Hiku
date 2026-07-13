@@ -310,7 +310,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00027900934, y: 0.0035442114}
+  m_Offset: {x: -0.0012412071, y: 0.0035442114}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -320,7 +320,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.52450645, y: 0.52506423}
+  m_Size: {x: 0.068302155, y: 0.52506423}
   m_EdgeRadius: 0
 --- !u!212 &406808633
 SpriteRenderer:
@@ -412,7 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81061f83e6c7ec041bcb1e96e31a951c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  SelectLevel: 50
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +561,8 @@ GameObject:
   - component: {fileID: 1044679218}
   - component: {fileID: 1044679220}
   - component: {fileID: 1044679221}
+  - component: {fileID: 1044679222}
+  - component: {fileID: 1044679223}
   m_Layer: 0
   m_Name: Finish
   m_TagString: Untagged
@@ -677,7 +678,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.033156395, y: 0}
+  m_Offset: {x: -0.0899415, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -687,7 +688,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.19403839, y: 1}
+  m_Size: {x: 0.08046818, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &1044679221
 Rigidbody2D:
@@ -716,6 +717,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1044679222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044679217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8351ba25bcfea494faf8bf26b2a6d76b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinSceneController
+--- !u!114 &1044679223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044679217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8351ba25bcfea494faf8bf26b2a6d76b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinCceneController
 --- !u!1 &1055602947
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +911,7 @@ GameObject:
   - component: {fileID: 1709410833}
   - component: {fileID: 1709410832}
   - component: {fileID: 1709410835}
+  - component: {fileID: 1709410836}
   m_Layer: 0
   m_Name: Finish (1)
   m_TagString: Untagged
@@ -927,7 +953,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.036676407, y: 0}
+  m_Offset: {x: 0.06438136, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -937,7 +963,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.19597721, y: 1}
+  m_Size: {x: 0.06315851, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1709410833
 SpriteRenderer:
@@ -1040,6 +1066,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1709410836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709410831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a17f4ff1ec111b48ba099a90587a8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoseSceneController
 --- !u!1 &1763707206
 GameObject:
   m_ObjectHideFlags: 0
