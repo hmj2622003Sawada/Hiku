@@ -6,7 +6,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
 	int timer = 0;
 	bool Flag = true;
-	[SerializeField]int  SelectLevel = 0;
 
 	private void Start()
 	{
@@ -15,17 +14,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
 	private void Update()
 	{
-		// プレイヤーの移動
-		if (Keyboard.current.spaceKey.wasPressedThisFrame)
-		{
-			transform.Translate(-0.1f, 0, 0); // 左に1動かす
-		}
-
-		// 敵の移動
 		if (Flag == true)
 		{
+			// プレイヤーの移動
+			if (Keyboard.current.spaceKey.wasPressedThisFrame)
+			{
+				transform.Translate(-0.1f, 0, 0); // 左に1動かす
+			}
+
+			// 敵の移動
 			timer++;
-			if (timer % (60 - SelectLevel)  == 0)
+			if (timer % (60 - (LevelControler.SelectLevel * 5))  == 0)
 			{
 				transform.Translate(0.1f, 0, 0); // 右に移動
 			}
