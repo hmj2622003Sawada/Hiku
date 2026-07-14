@@ -24,11 +24,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
 			// “G‚ÌˆÚ“®
 			timer++;
-			if (timer % (60 - (LevelControler.SelectLevel * 5))  == 0)
+			if (timer % (60 - (LevelControler.SelectLevel * 6))  == 0)
 			{
 				transform.Translate(0.1f, 0, 0); // ‰E‚ÉˆÚ“®
 			}
 		}
+	
+		
 
 		
 	}
