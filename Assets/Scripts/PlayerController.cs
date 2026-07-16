@@ -5,16 +5,22 @@ using UnityEngine.InputSystem;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
 	int timer = 0;
-	bool Flag = true;
+	bool StartFlag = false;
+	bool GoalFlag = false;
 
 	private void Start()
-	{
+	{ 
 		Application.targetFrameRate = 60;
 	}
 
 	private void Update()
 	{
-		if (Flag == true)
+		if (Keyboard.current.enterKey.wasPressedThisFrame)
+		{
+			GoalFlag = false;
+			StartFlag = true;
+		}
+		if (GoalFlag == false && StartFlag == true)
 		{
 			// プレイヤーの移動
 			if (Keyboard.current.spaceKey.wasPressedThisFrame)
@@ -26,7 +32,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 			timer++;
 			if (timer % (60 - (LevelControler.SelectLevel * 6))  == 0)
 			{
-				transform.Translate(0.1f, 0, 0); // 右に移動
+				transform.Translate(0.3f, 0, 0); // 右に移動
 			}
 		}
 	
@@ -37,6 +43,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		Flag = false;
+		StartFlag = false;
+		GoalFlag = true;
 	}
 }
